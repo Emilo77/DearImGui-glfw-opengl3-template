@@ -4,8 +4,11 @@
 
 namespace Application {
     void run() {
-        bool essa = true;
-        ImGui::ShowDemoWindow(&essa);
+        // here will be code for our application
+        bool show_application = true;
+        ImGui::Begin("Application", &show_application);
+        ImGui::Text("Hello from the app!");
+        ImGui::End();
     }
 }
 
